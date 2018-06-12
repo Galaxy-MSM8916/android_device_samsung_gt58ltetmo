@@ -6,6 +6,13 @@ $(call inherit-product, device/samsung/gte-common/device-common.mk)
 
 LOCAL_PATH := device/samsung/gt58ltetmo
 
+
+# RIL
+PRODUCT_PACKAGES += \
+	libril \
+	librilutils \
+	rild
+
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
